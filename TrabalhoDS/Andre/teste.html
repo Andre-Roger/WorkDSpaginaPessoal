@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="" href="/TrabalhoDS/Andre/teste.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="janela">
+        Escolha:
+        <select id="id_parametro">
+            <option value="1">maior</option>
+            <option value="2">menor</option>
+            <option value="3">igual</option>
+        </select>
+        <br>
+        <button onclick="botao()">botão</button>
+
+        <p id="mensagem"></p>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<script>
+    function botao() {
+        let parametro = id_parametro.value
+
+        if (parametro == 1) {
+            mensagem.innerHTML = "oi, tudo bem?"
+        }
+        else if (parametro == 2) {
+            mensagem.innerHTML = "oiiiii?"
+        }
+        else if (parametro == 3) {
+            mensagem.innerHTML = "oi, tudo bem?"
+        }
+    }
+</script>
